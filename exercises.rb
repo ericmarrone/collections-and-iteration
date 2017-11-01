@@ -18,3 +18,13 @@ p fav_colours[0]
 p siblings.sort
 siblings[:baby] = 0
 p fav_movies[:transformers]
+
+# Exercise 2
+
+p fav_colours.last
+cities[:hamilton] = 500000
+coin_flips.reverse!
+p cities[:toronto]
+puts "I think #{fav_artists[0]} is great"
+puts "I think #{fav_artists[1]} is great"
+puts "I think #{fav_artists[2]} is great"
