@@ -110,3 +110,48 @@ countries = [
   { :name => "France", :continent => "Europe", :island => "no"},
   { :name => "Australia", :continent => "Australia", :island => "yes"}
 ]
+
+# Exercise 7
+
+20.times {
+  p "I will not skateboard in the halls"
+}
+
+skateboard = Array.new(0)
+20.times {
+  skateboard << "I will not skateboard in the halls"
+}
+p skateboard
+
+numbers_to_fifty = Array.new(0)
+
+(1..50).each do |num|
+  numbers_to_fifty << num
+end
+
+p numbers_to_fifty
+sum_of_values = 0
+
+numbers_to_fifty.each do |num|
+  sum_of_values += num
+end
+
+p sum_of_values
+
+three_of_each = Array.new(0)
+(1..50).each do |num|
+  three_of_each << num << num << num
+end
+p three_of_each
+
+countries_not_island = Array.new(0)
+countries.each do |country|
+  country.each do |key, value|
+    if value == "no"
+      countries_not_island << country[:name]
+    else
+    end
+  end
+end
+p countries
+p countries_not_island
