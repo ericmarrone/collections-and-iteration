@@ -92,3 +92,21 @@ end
 
 fav_colours << "gold" << "silver"
 p fav_colours
+
+# Exercise 6
+
+movies = { 1999 => ["The Matrix", "Stat Wars: Episode 1", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+
+p movies
+
+phone = [[1, 2, 3,], [4, 5, 6], [7, 8, 9], ["*", 0, "\#"]]
+p phone
+
+countries = [
+  { :name => "Canada", :continent => "North America", :island => "no"},
+  { :name => "France", :continent => "Europe", :island => "no"},
+  { :name => "Australia", :continent => "Australia", :island => "yes"}
+]
