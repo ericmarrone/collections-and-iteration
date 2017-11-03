@@ -155,3 +155,22 @@ countries.each do |country|
 end
 p countries
 p countries_not_island
+
+# Exercise 8
+
+expenses_1 = [250, 7.95, 30.95, 16.50]
+expenses_2 = [350, 8.95, 32.95, 116.50]
+
+def expense_sum(expenses)
+  sum_expenses = 0
+  expenses.each do |expense|
+    sum_expenses += expense
+  end
+  return sum_expenses
+end
+
+sum_1 = expense_sum(expenses_1)
+p sum_1
+
+sum_2 = expense_sum(expenses_2)
+p sum_2
