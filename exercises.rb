@@ -41,3 +41,26 @@ p family_sort_reverse
 
 fav_movies["Beauty and the Beast"] = 1991, 2017
 p fav_movies
+
+# Exercise 4
+
+result = family_ages.select { |number| number < 30 }
+p result
+
+p family_ages.max
+
+frequency = Hash.new(0)
+coin_flips.each do |result|
+  frequency[result] += 1
+end
+frequency.map do |key, value|
+  if key == "heads"
+  puts  "#{key}x#{value}" else
+  end
+end
+
+fav_artists.pop
+p fav_artists
+
+cities[:toronto] = 5000000
+p cities
