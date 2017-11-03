@@ -64,3 +64,31 @@ p fav_artists
 
 cities[:toronto] = 5000000
 p cities
+
+# Exercise 5
+total_population = Array.new(0)
+cities.each do |city, population|
+  total_population << population
+end
+
+# p total_population
+sum_population = total_population.reduce(:+)
+p sum_population
+
+siblings.each do |name, age|
+  if age > 30
+    p "#{name.to_s.capitalize} is old"
+  else
+    p "#{name.to_s.capitalize} is young"
+  end
+end
+
+print fav_colours[-1] + " " + fav_colours[-2]
+
+family_ages.each do |age|
+  new_age = age + 1
+  p new_age
+end
+
+fav_colours << "gold" << "silver"
+p fav_colours
