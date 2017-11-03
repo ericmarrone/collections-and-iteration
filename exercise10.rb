@@ -17,3 +17,32 @@ display(students)
 p students.keys
 
 p students.values
+
+students.transform_values! { |v| v * 1.05 }
+
+p students
+
+students.delete(:cohort2)
+
+p students
+
+def total(students)
+  sum = 0.0
+  students.each do |key, value|
+    sum += value
+  end
+  return sum
+end
+
+total_students = total(students)
+
+p total_students
+
+
+staff = {
+  :cohort1 => 2,
+  :cohort2 => 4,
+  :cohort3 => 3
+}
+
+display(staff)
