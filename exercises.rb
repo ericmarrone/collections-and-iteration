@@ -174,3 +174,32 @@ p sum_1
 
 sum_2 = expense_sum(expenses_2)
 p sum_2
+
+#Exercise 9
+
+list_1 = ["carrots", "toilet paper", "apples", "salmon"]
+
+def output_grocery_list(list)
+  list.each do |item|
+    puts "* " + item
+  end
+end
+
+list_1 << "rice"
+print_grocery_list = output_grocery_list(list_1)
+
+
+p list_1.count
+
+if list_1.include? 'bananas' == true
+  puts "You need to buy bananas"
+else
+  puts "You don't need to buy bananas"
+end
+
+p list_1[1]
+
+output_grocery_list(list_1.sort)
+
+list_2 = list_1 - ["salmon"]
+output_grocery_list(list_2.sort)
